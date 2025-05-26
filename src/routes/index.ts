@@ -7,7 +7,7 @@ const rootRoutes = new Elysia({
   .use(toolsRoutes)
   .get('/ping', () => {
     return {
-      message: 'pong',
+      message: 'Pong with 🦊 Elysia',
       timestamp: new Date().toISOString()
     }
   })
