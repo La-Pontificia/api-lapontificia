@@ -8,3 +8,6 @@ content-type: application/json
   "password": "password",
   "role": "admin"
 }
+
+### 
+GET http://api.lapontificia.edu.pe/api/ping

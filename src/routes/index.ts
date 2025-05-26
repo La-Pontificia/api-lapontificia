@@ -3,13 +3,6 @@ import { toolsRoutes } from './tools'
 
 const rootRoutes = new Elysia({
   prefix: '/api'
-})
-  .use(toolsRoutes)
-  .get('/ping', () => {
-    return {
-      message: 'Pong with 🦊 Elysia',
-      timestamp: new Date().toISOString()
-    }
-  })
+}).use(toolsRoutes)
 
 export { rootRoutes }
