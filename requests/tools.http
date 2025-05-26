@@ -1,0 +1,10 @@
+POST http://localhost:3100/api/tools/cc_bitrix_jaguar
+content-type: application/json
+
+{
+  "firstName": "Bonnie",
+  "lastName": "Lass",
+  "email": "bonnie.lass@mycompany.com",
+  "password": "password",
+  "role": "admin"
+}
