@@ -10,4 +10,22 @@ content-type: application/json
 }
 
 ### 
-GET http://api.lapontificia.edu.pe/api/ping
+GET http://api.lapontificia.edu.pe/ping
+
+###
+POST https://api.lapontificia.edu.pe/api/tools/cc_bitrix_jaguar
+content-type: application/json
+
+{
+  "firstName": "Bonnie",
+  "lastName": "Lass",
+  "email": "bonnie.lass@mycompany.com",
+  "password": "password",
+  "role": "admin"
+}
+
+### 
+GET https://lapontificia.bitrix24.es/rest/30965/bhxlrv0m1czyxm2l/crm.deal.get.json?ID=67313
+
+### 
+POST https://oauth.bitrix.info/oauth/y0mxb5wq3l3o5cpr54y1jpd95ga3ulvt

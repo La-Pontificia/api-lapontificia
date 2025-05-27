@@ -2,8 +2,8 @@ import Elysia from 'elysia'
 
 const toolsRoutes = new Elysia({
   prefix: '/tools'
-}).post('/cc_bitrix_jaguar', ({ body, status }) => {
-  console.log(body)
+}).post('/cc_bitrix_jaguar', ({ body, query, status }) => {
+  console.log({ body, query })
   return status(200, body)
 })
 
