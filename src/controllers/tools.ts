@@ -57,6 +57,8 @@ export async function cc_bitrix_jaguar(ctx: Context) {
 
     void createExcel(res[0].id)
 
+    console.log(query)
+
     return status(200, query)
   } catch (error) {
     console.log(error)
