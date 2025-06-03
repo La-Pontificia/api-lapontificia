@@ -11,7 +11,13 @@ type ResponsePerson = {
 
 export async function getPerson(dni: string): Promise<ResponsePerson | null> {
   const res = await axios.get<ResponsePerson>(
-    `https://graphperu.daustinn.com/api/query/${dni}`
+    `https://graphperu.daustinn.com/api/query/${dni}`,
+    {
+      headers: {
+        'User-Agent': 'Mozilla/5.0',
+        Accept: 'application/json'
+      }
+    }
   )
 
   if (res.status !== 200) {
