@@ -20,7 +20,7 @@ export async function getPerson(dni: string): Promise<ResponsePerson | null> {
     }
   )
 
-  if (res.status !== 200) {
+  if (res.status !== 200 && res.status !== 304) {
     return null
   }
 
