@@ -1,13 +1,4 @@
-POST http://localhost:3100/api/tools/cc_bitrix_jaguar
-content-type: application/json
-
-{
-  "firstName": "Bonnie",
-  "lastName": "Lass",
-  "email": "bonnie.lass@mycompany.com",
-  "password": "password",
-  "role": "admin"
-}
+POST http://localhost:3100/api/tools/cc_bitrix_jaguar?dni=72377685&un=elp&periodo=2025-C&pestudio=SI
 
 ### 
 GET http://api.lapontificia.edu.pe/ping
@@ -24,8 +15,18 @@ content-type: application/json
   "role": "admin"
 }
 
-### 
-GET https://lapontificia.bitrix24.es/rest/30965/bhxlrv0m1czyxm2l/crm.deal.get.json?ID=67313
+###  get deal
+POST https://lapontificia.bitrix24.es/rest/30965/1bjbl9ir52fuew6b/crm.deal.get.json
+content-type: application/json
 
-### 
-POST https://oauth.bitrix.info/oauth/y0mxb5wq3l3o5cpr54y1jpd95ga3ulvt
+{
+  "ID": 67497
+}
+
+### get client
+POST https://lapontificia.bitrix24.es/rest/30965/1bjbl9ir52fuew6b/crm.contact.get.json
+content-type: application/json
+
+{
+  "ID": "59241"
+}
