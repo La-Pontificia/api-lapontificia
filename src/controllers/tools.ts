@@ -109,7 +109,7 @@ async function createExcel(id_job: string) {
 const PROGRAMS = {
   AE: 'ADMINISTRACIÓN DE EMPRESAS',
   CT: 'CONTABILIDAD',
-  SI: 'DESARROLLO DE SISTEMAS DE INFORMACIÓN',
+  SI: 'Ingeniería de Sistemas de Información',
   ET: 'ENFERMERIA TÉCNICA'
 }
 
